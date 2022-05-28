@@ -132,12 +132,55 @@ button[type="submit"] {
     border-radius: 10px;
     width: 228px;
     height: 59px;
-    margin-right: 18px;
-    margin-left: auto;
+    margin-left: 38px;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     color:#FFFFFF;
+}
+
+h2 {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+}
+
+.steps-container {
+    width: 1177px;
+    height: 247px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.steps-items {
+    width: 1177px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.steps-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px
+}
+
+.steps-text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
 }
