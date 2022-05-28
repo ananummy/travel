@@ -1,5 +1,11 @@
 body {
     width: 1440px;
+    margin: 0;
+}
+
+header {
+    height: 97px;
+    background: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash.jpg');
 }
 
 .header-container {
@@ -7,7 +13,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: linear-gradient(rgba(242, 120, 92, 0.7), rgba(242, 120, 92, 0.7)), url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash.jpg');
+    margin-bottom: 0px;
+    background: linear-gradient(rgba(242, 120, 92, 0.7), rgba(242, 120, 92, 0.7)), url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash.jpg');
     background-position: top;
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
@@ -15,6 +22,8 @@ body {
 .logo {
     margin-left: 120px;
     margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 34px;
 }
 
 .nav-list {
@@ -22,7 +31,6 @@ body {
     justify-content: space-between;
     gap: 42px;
     flex-direction: row;
-
     margin-right: 196px;
 }
 
@@ -57,16 +65,15 @@ ul {
 
 .preview {
     background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash.jpg');
-    background-position: center -90px;
-    height: 675px;
+    background-position: center -97px;
+    height: 668px;
 }
 
 .preview-container {
     padding: 0;
     margin-left: 120px;
     margin-right: auto;
-    margin-bottom: 221px;
-    padding-top: 32px;
+    padding-top: 25px;
     height: 422px;
 }
 
@@ -118,7 +125,6 @@ input[type="text"] {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-
 }
 
 ::placeholder {
@@ -156,10 +162,9 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: auto;
+    margin-left: 146px;
     margin-right: auto;
-    margin-top: 80px;
+    padding-top: 46px;
 }
 
 .steps-items {
@@ -167,13 +172,20 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10px;
+}
+
+.steps-item:nth-child(2) {
+    margin-left: 41px;
 }
 
 .steps-item {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 30px
+    height: 154px;
+    width: auto;
+    padding: 0;
 }
 
 .steps-text {
@@ -183,4 +195,5 @@ h2 {
     font-size: 20px;
     line-height: 24px;
     color: #0D606F;
+    margin-top: 30px;
 }
