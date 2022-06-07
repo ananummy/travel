@@ -197,3 +197,60 @@ h2 {
     color: #0D606F;
     margin-top: 30px;
 }
+
+.destination-container {
+    height: 1042px;
+}
+
+.destination-pics {
+    display: flex;
+    flex-direction: row;
+    width: 2520px;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.destination-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 10px;
+} 
+
+.destination-item {
+    height: 800px;
+    width: 800px;
+    border-radius: 16px;
+    display: flex;
+    flex: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.destination-item:first-child {
+    background: url(./assets/img/Destination_1.jpg);
+}
+
+.destination-item:nth-child(2) {
+    background: url(./assets/img/Destination_2.jpg);
+}
+
+.destination-item:last-child {
+    background: url(./assets/img/Destination_3.jpg);
+}
+
+.destination-text {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
