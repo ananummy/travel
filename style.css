@@ -138,13 +138,16 @@ button[type="submit"] {
     border-radius: 10px;
     width: 228px;
     height: 59px;
-    margin-left: 38px;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     color:#FFFFFF;
+}
+
+.preview-button {
+    margin-left: 38px;
 }
 
 h2 {
@@ -199,15 +202,29 @@ h2 {
 }
 
 .destination-container {
-    height: 1042px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 97px;
 }
 
 .destination-pics {
     display: flex;
-    flex-direction: row;
-    width: 2520px;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    width: 1440px;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 60px;
+    margin-left: -1080px;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.slider {
+    margin-top: 24px;
+    margin-bottom: 40px;
 }
 
 .destination-button {
@@ -227,9 +244,10 @@ h2 {
     width: 800px;
     border-radius: 16px;
     display: flex;
-    flex: row nowrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-end;
+    flex-shrink: 0;
 }
 
 .destination-item:first-child {
