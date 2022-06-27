@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <title>TRAVEL</title>
 </head>
 <body>
@@ -18,16 +19,15 @@
         <div class="header-container">
             <img src="assets/svg/logo.svg" class ="header-item logo" alt="logo">
             <ul class="header-item nav-list">
-                <li class="nav-item">How It Works</li>
-                <li class="nav-item">Plan Your Trip</li>
-                <li class="nav-item">Destination</li>
-                <li class="nav-item">Travel Stories</li>
+                <li class="nav-item"><a href="#preview-nav">How It Works</a></li>
+                <li class="nav-item"><a href="#destination-nav">Destination</a></li>
+                <li class="nav-item"><a href="#stories-nav">Travel Stories</a></li>
             </ul>
-            <button name="login" class="header-item login-button">Login</button>
+            <button type="submit" name="login" class="header-item login-button">Login</button>
         </div>
     </header>
     <main>
-        <section class="preview">
+        <section class="preview" id="preview-nav">
             <div class="preview-container">
                 <h1>Explore the beauty of the World</h1>
                 <p class="preview-text">Recieve personalized recommendations for countries, hotels, activities and more</p>
@@ -37,9 +37,9 @@
                 </form>
             </div>
         </section>
-        <section class="steps">
+        <section class="steps" id="steps-nav">
             <div class="steps-container">
-                <h2>3 STEPS TO THE PERFECT TRIP</h2>
+                <h2 class="steps-h2">3 STEPS TO THE PERFECT TRIP</h2>
                 <div class="steps-items">
                     <div class="steps-item">
                         <img src="assets/svg/Frame_10.svg" alt="activity">
@@ -56,9 +56,9 @@
                 </div>
             </div>
         </section>
-        <section class="destination">
+        <section class="destination" id="destination-nav">
             <div class="destination-container">
-                <h2>POPULAR DESTINATIONS</h2>
+                <h2 class="destination-h2">POPULAR DESTINATIONS</h2>
                 <div class="destination-pics">
                     <div class="destination-item"><p class="destination-text">SPAIN</p></div>
                     <div class="destination-item"><p class="destination-text">JAPAN</p></div>
@@ -66,24 +66,59 @@
                 </div>
                 <img src="assets/svg/Frame_6.svg" alt="slider" class="slider" width="80" height="20">
                 <button type="submit" class="destination-button">
-                    <img src="assets/svg/bi_arrow-right.svg" alt="arrow-right"><p>Find More</p>
+                    <img src="assets/svg/bi_arrow-right.svg" alt="arrow-right">Find More
                 </button>
             </div>
         </section>
-        <section class="stories"></section>
+        <section class="stories" id="stories-nav">
+            <h2>TRAVEL STORIES</h2>
+            <div class="stories-container">
+                <div class="stories-item">
+                    <img src="assets/img/story-1.jpg" alt="Thailand" class="stories-pic">
+                    <h3>10 Photos of Attractive Thailand</h3>
+                    <p class="story-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <b><u>Read More</u></b>
+                    </p>
+                </div>
+                <div class="stories-item">
+                    <img src="assets/img/story-2.jpg" alt="Utah" class="stories-pic">
+                    <h3>Canyonlands National Park, Utah</h3>
+                    <p class="story-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <b><u>Read More</u></b>
+                    </p>
+                </div>
+                <div class="stories-item">
+                    <img src="assets/img/story-3.jpg" alt="Mountains" class="stories-pic">
+                    <h3>I left my heart in the Mountains!</h3>
+                    <p class="story-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <b><u>Read More</u></b>
+                    </p>
+                </div>
+                <div class="stories-item">
+                    <img src="assets/img/story-4.jpg" alt="Journey" class="stories-pic">
+                    <h3>The Longest journey in my life!</h3>
+                    <p class="story-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <b><u>Read More</u></b>
+                    </p>
+                </div>
+            </div>
+            <button type="submit" class="story-button">
+                <img src="assets/svg/bi_arrow-right.svg" alt="arrow-right">See More
+            </button>
+        </section>
     </main>
     <footer>
         <div class="footer-container">
-            <img src="assets/svg/All Rights Reserved © Travel Portal.svg" class="footer-item" alt="all rights reserved">
+            <p class="rights">All Rights Reserved © Travel Portal</p>
             <ul class="footer-item links">
                 <li class="links-item">
-                    <img src="assets/svg/akar-icons_instagram-fill.svg" alt="instagram">
+                    <a href="https://www.instagram.com/"><img src="assets/svg/akar-icons_instagram-fill.svg" alt="instagram"></a>
                 </li>
                 <li class="links-item">
-                    <img src="assets/svg/akar-icons_twitter-fill.svg" alt="twitter">
+                    <a href="https://www.youtube.com/"><img src="assets/svg/akar-icons_video.svg" alt="youtube"></a>
                 </li>
                 <li class="links-item">
-                    <img src="assets/svg/akar-icons_video.svg" alt="youtube">
+                    <a href="https://twitter.com/"><img src="assets/svg/akar-icons_twitter-fill.svg" alt="twitter"></a>
                 </li>
             </ul> 
         </div>
