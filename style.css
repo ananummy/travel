@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1440px;
     margin: 0;
+    background-color: #FFFFFF;
 }
 
 header {
@@ -24,6 +29,7 @@ header {
     margin-right: auto;
     margin-top: 25px;
     margin-bottom: 34px;
+    cursor: pointer;
 }
 
 .nav-list {
@@ -41,6 +47,7 @@ header {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 ul {
@@ -61,6 +68,11 @@ ul {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: rgba(13, 96, 111, 0.5);
 }
 
 .preview {
@@ -144,6 +156,13 @@ button[type="submit"] {
     font-size: 24px;
     line-height: 32px;
     color:#FFFFFF;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    
+    filter: drop-shadow(0px 4px 4px #042127);
 }
 
 .preview-button {
@@ -157,6 +176,11 @@ h2 {
     font-size: 40px;
     line-height: 53px;
     color: #F2785C;
+    margin: 0;
+}
+
+.steps {
+    margin-top: 80px;
 }
 
 .steps-container {
@@ -167,7 +191,6 @@ h2 {
     flex-direction: column;
     margin-left: 146px;
     margin-right: auto;
-    padding-top: 46px;
 }
 
 .steps-items {
@@ -189,6 +212,7 @@ h2 {
     height: 154px;
     width: auto;
     padding: 0;
+    margin-top: 40px;
 }
 
 .steps-text {
@@ -201,13 +225,16 @@ h2 {
     margin-top: 30px;
 }
 
+.destination {
+    margin-top: 97px;
+}
+
 .destination-container {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 97px;
 }
 
 .destination-pics {
@@ -219,15 +246,17 @@ h2 {
     gap: 60px;
     margin-left: -1080px;
     padding: 0;
-    margin-top: 12px;
+    margin-top: 46px;
 }
 
 .slider {
     margin-top: 24px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
-.destination-button {
+.destination-button,
+.story-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -271,4 +300,130 @@ h2 {
     color: #FFFFFF;
     margin-left: 15px;
     margin-bottom: 40px;
+}
+
+.stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./assets/img/story-background.jpg);
+    background-position: center 90px;
+    background-repeat: no-repeat;
+
+}
+
+.stories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+    width: 1201px;
+    
+}
+
+.stories-item {
+    height: 250px;
+    width: 1201px;
+    display: grid;
+    grid-template-columns: 400px 760px;
+    grid-template-rows: 42px 184px ;
+    grid-template-areas: "stories-pic h3"
+                         "stories-pic story-content";
+    row-gap: 24px;
+    column-gap: 40px;
+    justify-items: flex-start;
+    align-content: flex-start;
+}
+
+.stories-pic {
+    height: 250px;
+    width: 400px;
+    border-radius: 16px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+}
+
+h3 {
+    width: 760px;
+    height: 42px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin: 0;
+    padding: 0;
+}
+
+.story-content {
+    width: 760px;
+    height: 184px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    grid-column-start: 2;
+    margin: 0;
+}
+
+.story-button {
+    margin-top: 40px;
+    margin-bottom: 41px;
+}
+
+footer {
+    height: 61px;
+    background-image: url(./assets/img/story-background.jpg);
+    background-size: auto;
+    background-position: center -1270px;
+}
+
+.footer-container {
+    width: 723px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 586px;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+.rights {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    width: 141px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: rgba(13, 96, 111, 0.5);
+}
+
+.links-item:hover {
+    filter: drop-shadow(5px 5px 5px #042127);
 }
