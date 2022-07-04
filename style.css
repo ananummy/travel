@@ -3,15 +3,59 @@ html {
 }
 
 body {
-    width: 1440px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
     background-color: #FFFFFF;
 }
 
 header {
     height: 97px;
     background: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash.jpg');
+    background-position: top;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+@media (max-width: 1200px) {
+    .stories-item {
+        padding-left: 119px;
+        padding-right: 15px;
+        text-align: left;
+        grid-template-columns: 400px 600px;
+        grid-template-rows: 42px 184px;
+    }
+
+    .story-content {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 1140px) {
+    .steps-item:first-child {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .steps-item:nth-child(2) {
+        text-align: center;
+    }
+
+    .steps-item:last-child {
+        align-items: flex-end;
+        text-align: right;
+    }
+
 }
 
 .header-container {
@@ -19,6 +63,9 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 119px;
+    padding-right: 119px;
     margin-bottom: 0px;
     background: linear-gradient(rgba(242, 120, 92, 0.7), rgba(242, 120, 92, 0.7)), url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash.jpg');
     background-position: top;
@@ -26,8 +73,6 @@ header {
 }
 
 .logo {
-    margin-left: 120px;
-    margin-right: auto;
     margin-top: 25px;
     margin-bottom: 34px;
     cursor: pointer;
@@ -35,10 +80,11 @@ header {
 
 .nav-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 42px;
     flex-direction: row;
-    margin-right: 196px;
+    padding: 0;
+    width: 100%;
 }
 
 .nav-item {
@@ -58,18 +104,13 @@ ul {
 .login-button {
     width: 103px;
     height: 41px;
-    background: #0D606F;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    border-radius: 10px;
-    border: none;
-    margin-right: 120px;
-    font-family: 'Red Hat Text';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
-    color: #FFFFFF;
-    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
 
 .login-button:hover {
@@ -118,7 +159,7 @@ form {
     margin-top: 46px;
     padding: 0;
     height: 95px;
-    width: 892px;
+    max-width: 892px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
 }
@@ -149,25 +190,24 @@ button[type="submit"] {
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
-    width: 228px;
-    height: 59px;
     font-family: 'Red Hat Text';
     font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
     color:#FFFFFF;
     transition: 0.3s;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    
     filter: drop-shadow(0px 4px 4px #042127);
 }
 
 .preview-button {
     margin-left: 38px;
+    width: 228px;
+    height: 59px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 h2 {
@@ -185,21 +225,21 @@ h2 {
 }
 
 .steps-container {
-    width: 1177px;
+    max-width: 1177px;
     height: 247px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 146px;
-    margin-right: auto;
+    margin-left: 143px;
+    margin-right: 113px;
 }
 
 .steps-items {
-    width: 1177px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .steps-item:nth-child(2) {
@@ -241,7 +281,7 @@ h2 {
 .destination-pics {
     display: flex;
     flex-flow: row nowrap;
-    width: 1440px;
+    max-width: 1440px;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 60px;
@@ -258,6 +298,9 @@ h2 {
 
 .destination-button,
 .story-button {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -267,6 +310,8 @@ h2 {
     padding-left: 32px;
     padding-right: 32px;
     gap: 10px;
+    width: 228px;
+    height: 59px;
 } 
 
 .destination-item {
@@ -328,10 +373,8 @@ h2 {
 
 .stories-item {
     height: 250px;
-    width: 1201px;
+    max-width: 1201px;
     display: grid;
-    grid-template-columns: 400px 760px;
-    grid-template-rows: 42px 184px ;
     grid-template-areas: "stories-pic h3"
                          "stories-pic story-content";
     row-gap: 24px;
@@ -341,33 +384,48 @@ h2 {
 }
 
 .stories-pic {
-    height: 250px;
-    width: 400px;
     border-radius: 16px;
     filter: drop-shadow(0px 4px 4px #0D606F);
 }
 
 h3 {
-    width: 760px;
-    height: 42px;
+    max-width: 760px;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
     color: #0D606F;
     margin: 0;
     padding: 0;
 }
 
+@media (min-width: 1200px) {
+    .stories-item {
+        height: 250px;
+        width: 400px;
+    }
+
+    .stories-item {
+        grid-template-columns: 400px 760px;
+        grid-template-rows: 42px 184px;
+    }
+
+    h3 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+    .story-content {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
 .story-content {
-    width: 760px;
+    max-width: 760px;
     height: 184px;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
     color: #0D606F;
     grid-column-start: 2;
     margin: 0;
@@ -386,7 +444,7 @@ footer {
 }
 
 .footer-container {
-    width: 723px;
+    max-width: 723px;
     height: auto;
     display: flex;
     flex-direction: row;
